@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holiday Finder</title>
+  </head>
+  <body>
+    <div id="message"></div></div>
+    <script>
+      const dt = new Date();
+      const month = dt.getMonth();
+      let msg;
+      switch (month) {
+        case 0:
+          msg = "January 4 is National Spaghetti Day!";
+          break;
+        case 4:
+          msg = "May 9 is National Pizza Day!";
+          break;
+        case 2:
+          msg = "March 14 is National Pi Day!";
+          break;
+        case 3:
+          msg = "April 12 is National Grilled Cheese Day!";
+          break;
+        default:
+          msg = "I don't know any holidays in this month!";
+          break;
+      }
+      const el = document.getElementById("message");
+      el.innerHTML = msg;
+    </script>
+  </body>
+</html>
